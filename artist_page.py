@@ -81,7 +81,9 @@ class Artists_Page:
     
     
     def get_list_works(self):
-        self.links = get_list_work.get_works_list(self.artist_page)
+#         self.links = get_list_work.get_works_list(self.artist_page)
+        self.links = get_list_work.get_works_list(self.artist['link'])
+        
 #         for work_link in self.artist_page.find("ul", {'class': 'products columns-3'}).find_all("li"):
 #             self.links.append(work_link.find('a')['href'])
 
